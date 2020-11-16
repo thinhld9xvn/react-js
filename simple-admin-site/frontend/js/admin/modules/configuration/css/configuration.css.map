@@ -1,0 +1,9 @@
+{
+    "version": 3,
+    "mappings": "AAAA,AAAA,mBAAmB,GAAG,GAAG,CAAC;EACtB,SAAS,EAAE,cAAc;CAC5B;;AAED,AAAA,YAAY,CAAC;EACT,SAAS,EAAE,IAAI;EACf,KAAK,EAAE,OAAO;EACd,WAAW,EAAE,MAAM;EACnB,UAAU,EAAE,MAAM;CACrB",
+    "sources": [
+        "configuration.scss"
+    ],
+    "names": [],
+    "file": "configuration.css"
+}

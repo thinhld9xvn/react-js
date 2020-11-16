@@ -1,0 +1,27 @@
+Danh sách lúc đầu (List) :
+    Khám phá Châu Âu
+        Khám phá nước Đức
+            Lâu đài Neuschwanstein
+            Thành phố cảng HamBurg
+
+Danh sách lọc (FilterLists) :
+    x Khám phá Châu Âu
+        x Khám phá nước Đức
+
+Danh sách chọn (Chosen) :
+    Khám phá Châu Âu
+    Khám phá nước Đức
+    Lâu đài Neuschwanstein
+
+
+Input: Bỏ chọn Khám phá nước Đức
+Output : 
+    x Khám phá Châu Âu
+        . Khám phá nước Đức
+
+PseudoCode :
+    - SET : (ITEM).selected = false
+    - 
+        + (LIST).childrens => {(child)}
+            + (child) IN (Chosen) ? (ITEM).pending = true
+                                    

@@ -1,0 +1,9 @@
+{
+    "AllowUploadFileExtensions" : [
+        "bmp", "jpg", "jpeg", "png", "gif", 
+        "doc", "docx", 
+        "xls", "xlsx",
+        "pdf"
+    ],
+    "AllowUploadMaxFileSizeMB" : 20
+}

@@ -1,0 +1,89 @@
+@media (min-width: 768px) {
+  .fm-row-height {
+    height: calc(100vh - 80px);
+    height: -webkit-calc(100vh - 80px);
+  }
+  .h100p-ms {
+    height: 100%;
+  }
+  .filemanager-content #file-manager .fm-left,
+  .filemanager-content #file-manager .fm-right {
+    height: calc(100% - 85px);
+    height: -ms-calc(100% - 85px);
+    overflow: auto;
+  }
+  .filemanager-content #file-manager .fm-left {
+    border-right: 1px dotted #e2e2e2;
+  }
+}
+
+@media (max-width: 768px) {
+  .filemanager-content #file-manager .fm-left {
+    height: 120px;
+  }
+}
+
+@media (min-width: 1130px) {
+  .listFile-columns-layout > .item-layout {
+    width: 19.6% !important;
+    margin: 0 .5% .5% 0;
+  }
+  .listFile-columns-layout > .item-layout:nth-child(5n+5) {
+    margin-right: 0;
+  }
+  .listFile-columns-layout > .item-layout:nth-child(5n+6) {
+    clear: both;
+  }
+  .listFile-columns-layout > .item-layout:nth-last-child(-n+5) {
+    margin-bottom: 0;
+  }
+}
+
+@media (min-width: 580px) and (max-width: 1130px) {
+  .listFile-columns-layout > .item-layout {
+    width: 24% !important;
+    margin: 0 .5% .5% 0;
+  }
+  .listFile-columns-layout > .item-layout:nth-child(4n+4) {
+    margin-right: 0;
+  }
+  .listFile-columns-layout > .item-layout:nth-child(4n+5) {
+    clear: both;
+  }
+  .listFile-columns-layout > .item-layout:nth-last-child(-n+4) {
+    margin-bottom: 0;
+  }
+}
+
+@media (min-width: 490px) and (max-width: 580px) {
+  .listFile-columns-layout > .item-layout {
+    width: 32%;
+    margin: 0 .5% .5% 0;
+  }
+  .listFile-columns-layout > .item-layout:nth-child(3n+3) {
+    margin-right: 0;
+  }
+  .listFile-columns-layout > .item-layout:nth-child(3n+4) {
+    clear: both;
+  }
+  .listFile-columns-layout > .item-layout:nth-last-child(-n+3) {
+    margin-bottom: 0;
+  }
+}
+
+@media (max-width: 490px) {
+  .listFile-columns-layout > .item-layout {
+    width: 48%;
+    margin: 0 .5% .5% 0;
+  }
+  .listFile-columns-layout > .item-layout:nth-child(2n+2) {
+    margin-right: 0;
+  }
+  .listFile-columns-layout > .item-layout:nth-child(2n+3) {
+    clear: both;
+  }
+  .listFile-columns-layout > .item-layout:nth-last-child(-n+2) {
+    margin-bottom: 0;
+  }
+}
+/*# sourceMappingURL=layout.css.map */

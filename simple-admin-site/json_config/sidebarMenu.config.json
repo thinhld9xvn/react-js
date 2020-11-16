@@ -1,0 +1,89 @@
+[
+    {
+        "id" : "1",
+        "icon" : "dashboard",
+        "text" : "Bảng điều khiển",
+        "url" : "/admin/dashboard",
+        "is_active" : true,
+        "hasChildrens" : false
+    },        
+    {
+        "id" : "2",
+        "icon" : "dialpad",
+        "text" : "Cấu hình",
+        "url" : "#",
+        "hasChildrens" : true,
+        "is_expand" : false,
+        "is_active" : false,
+        "childrens" : [
+            {
+                "id" : "2_c1",
+                "icon" : "sort",
+                "text" : "Menu",
+                "url" : "/admin/configuration/menu",
+                "is_active" : false
+            },
+            {
+                "id" : "2_c2",
+                "icon" : "sort",
+                "text" : "Giao diện",
+                "url" : "/admin/configuration/interface",
+                "is_active" : false                       
+            },
+            {
+                "id" : "2_c3",
+                "icon" : "sort",
+                "text" : "Website",
+                "url" : "/admin/configuration/website",
+                "is_active" : false                     
+            },
+            {
+                "id" : "2_c4",
+                "icon" : "sort",
+                "text" : "Mục bài viết nâng cao",
+                "url" : "/admin/configuration/post_types",
+                "is_active" : false                       
+            }
+        ]
+    },
+    {
+        "id" : "3",
+        "icon" : "person",
+        "text" : "Thành viên",
+        "url" : "#",
+        "is_active" : false,
+        "is_expand" : false,
+        "hasChildrens" : true,
+        "childrens" : [
+            {
+                "id" : "3_c1",
+                "icon" : "sort",
+                "text" : "Hồ sơ của bạn",
+                "url" : "/admin/users/profile",
+                "is_active" : false                       
+            },
+            {
+                "id" : "3_c2",
+                "icon" : "sort",
+                "text" : "Tất cả thành viên",
+                "url" : "/admin/users/all_users",
+                "is_active" : false                      
+            },
+            {
+                "id" : "3_c3",
+                "icon" : "sort",
+                "text" : "Thêm thành viên",
+                "url" : "/admin/users/new_user",
+                "is_active" : false                       
+            }
+        ]
+    },         
+    {
+        "id" : "4",
+        "icon" : "attachment",
+        "text" : "Thư viện ảnh",
+        "url" : "/admin/media",
+        "is_active" : false,
+        "hasChildrens" : false
+    }
+]

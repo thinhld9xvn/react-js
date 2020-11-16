@@ -1,0 +1,30 @@
+.component-loading {
+    
+    position: fixed;
+    left: 0;
+    top: 0;    
+    width: 0;
+    height: 2px;
+    background-color: #9c27b0;
+    z-index: 1000;       
+    
+    &.animation {
+
+        transition: width 1s;
+        -webkit-transition: width 1s;
+        
+    }
+
+    &.per-half {
+
+        width: 50%;
+    
+    }
+
+    &.finish {
+
+        width: 100%;
+    
+    }
+    
+}
