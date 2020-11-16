@@ -1,0 +1,303 @@
+.frontend-creator {
+    
+    font-family: 'Tahoma';
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 1.6em;
+
+    .none {
+        display: none;
+    }
+
+    .container {
+        width: 90% !important;
+    }
+
+    img, iframe {
+        max-width: 100%;
+        height: auto;
+    }
+
+    .fluidContainerToolbar {
+        position: fixed;
+        top: 0;
+        left: 0;
+        right: 0;
+        z-index: 999;
+        background-color: transparent;
+        padding: 10px 0;
+    }
+    
+    .btnTNavigation {
+        font-size: 15px;
+    }
+    
+    .btnTNavigation span.fa {
+        font-size: 18px;
+    }
+    
+    .btnTNavigation span.caption {
+        padding-left: 10px;
+    }
+    
+    .fluidContainerMain {
+        margin-top: 100px;
+    }
+    
+    .padleft10 {
+        padding-left: 10px;
+    }
+
+    .padleft5 {
+        padding-left: 5px;
+    }
+
+    label {
+        font-weight: 700 !important;
+    }
+    
+    label[for] {
+        padding-left: 5px;
+    }
+    
+    .inputBlock:not(:first-child),
+    .mtop10 {
+        margin-top: 10px;
+    }
+    
+    .w200p {
+        width: 200px;
+    }
+    
+    .ck.ck-editor__main, .ck.ck-editor__main > div {
+        min-height: 250px
+    }  
+
+    .rowFluid {
+
+        min-height: 60px;
+        border: 1px dashed #ddd;
+        position: relative;
+        display: flex;
+        width: 100%;        
+
+        &:not(:first-child) {
+            margin-top: 30px;
+        }
+
+        & .addElement {
+
+            display: block;
+            text-align: center;
+            min-height: 60px;
+
+            &:before {
+                content: "\f067";
+                font-family: 'FontAwesome';
+                font-size: 25px;
+                line-height: 60px;
+                padding-left: 20px;
+                color: #ccc;
+                cursor: pointer;
+            }
+
+        }
+
+        & .rowToolbar {
+            position: absolute;
+            display: flex;
+            top: -25px;
+            left: -1px;
+            color: #8c8888;
+        }
+    
+        & .rowToolbar > div {
+
+            padding: 0 5px;
+            border: 1px dashed #ccc;
+            cursor: pointer;
+            border-bottom-color: transparent;
+
+            &:not(:first-child) {
+
+                margin-left: 0;
+                border-left-color: transparent;
+
+            }
+
+            &.removeRow {
+
+                & > span {
+                    color: #d42b2b;
+                }
+
+            }
+
+        }
+        & .menuToolbarDropDown {
+            position : absolute;
+            background-color: #fff;
+            z-index: -1;
+            height: 0;
+            overflow: hidden;
+            transition: height .2s;
+            -webkit-transition: height .2s;
+        }
+        & .menuToolbarDropDown.active {
+            overflow: auto;
+            z-index: 10;
+            height: auto;
+        }
+        & .menuToolbarDropDown ul {
+            padding: 0;
+            list-style: none;
+            width: 50px;
+        }
+        & .menuToolbarDropDown ul li {
+            padding: 5px 5px 0 3px;
+        }
+
+        & .rowContainer {
+
+            display: flex;
+            width: 100%;
+    
+            & .columnFluid {
+
+                //display: flex;
+                min-height: 60px;
+                padding: 0;
+                //justify-content: center;
+               // align-items: center;
+                
+                &:not(:first-child) {
+
+                    border-left: 1px dotted #ccc;
+
+                }
+                  
+
+            }        
+
+        }
+
+    } 
+
+    .components {
+        
+        padding: 5px;
+
+        & ._ui_component {
+
+            position: relative;
+            padding: 5px;
+            transition: border-color .2s;
+            -webkit-transition: border-color .2s;
+            border: 1px dashed transparent;            
+
+            & ._ui_toolbar {
+
+                position: absolute;
+                top: -30px;
+                left: 50px;
+                z-index: -1;
+                background-color: #fff;
+                border: 1px dashed #ccc;
+                opacity: 0;
+                transition: opacity .2s;
+                -webkit-transition: opacity .2s;
+
+                & a {
+
+                    color :#8c8888;                   
+                    padding: 0 10px;
+                    display: block;
+                    float: left;
+
+                    &:not(:first-child) {
+
+                        border-left: 1px dashed #ccc;
+
+                    }
+
+                }
+
+            }
+
+            &:hover {
+
+                border-color:  #ddd;
+
+                & ._ui_toolbar {
+
+                    z-index: 10;
+                    opacity: 1;
+
+                }
+
+            }
+
+        }
+
+    }
+
+    .AddElementModal {
+
+        & .btnCreateComponent {
+
+            height: 45px;
+            font-size: 15px;        
+            margin: 10px 10px 0 0;
+
+        }
+
+    }
+
+    .popbox.componentModal {
+
+        overflow: hidden;
+
+        & .popbox_container {
+
+            max-width: 90%;
+
+            & .text {
+                
+                max-height: 450px;
+                overflow-y: auto;
+                overflow-x: hidden;
+
+                & > .wrapperPanel {
+
+                    display: flex;
+
+                    & .settingsPanel {
+
+                        width: 40%;
+                        padding-right: 20px;
+                        border-right: 1px solid #eee;
+
+                    }
+
+                    & .previewPanel {
+                                                
+                        width: 60%;                    
+                        padding-left: 20px;
+
+                        & > div {
+                            position: fixed;
+                            z-index: 10;
+                        }
+
+                    }
+
+                }
+
+            }
+
+        }
+
+    }
+    
+
+}
